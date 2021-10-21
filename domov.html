@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Domov</title>
+</head>
+<style>
+    body {
+        font-size: 28px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: wheat;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: lightslategrey;
+    }
+
+    .active {
+        background-color: wheat;
+    }
+
+    header {
+        background-color: black;
+        text-align: center;
+    }
+
+    h2 {
+        height: 100px;
+        text-align: center;
+        background-color: red;
+        margin: 0;
+    }
+
+    div.gallery {
+        border: 3px solid gray;
+    }
+
+    div.gallery:hover {
+        border: 3px solid red;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 1400px) {
+        .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .responsive {
+            width: 100%;
+        }
+    }
+</style>
+<body>
+
+<div class="header">
+    <h2>LOGO</h2>
+</div>
+
+<ul class="menu">
+    <li><a class="active" href="domov.html">Domov</a></li>
+    <li><a href="onas.html">O Nas</a></li>
+    <li><a href="Nehnutelnosti.html">Nehnutelnosti</a></li>
+    <li><a href="#dopln">Sluzby</a></li>
+    <li><a href="#dopln">Blog</a></li>
+    <li><a href="#dopln">Kariera</a></li>
+    <li><a href="#dopln">Kontakt</a></li>
+</ul>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="kupabytu.jpg">
+            <img src="kupabytu.jpg" alt="byt" width="600" height="400">
+        </a>
+        <div class="desc">Kupit byt</div>
+    </div>
+</div>
+
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="kupadomu.jpg.jpg">
+            <img src="kupadomu.jpg" alt="byt2" width="600" height="400">
+        </a>
+        <div class="desc">kupit dom</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="kupabytu.jpg">
+            <img src="kupabytu.jpg" alt="dom" width="600" height="400">
+        </a>
+        <div class="desc">Predat byt</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="kupadomu.jpg">
+            <img src="kupadomu.jpg" alt="dom2" width="600" height="400">
+        </a>
+        <div class="desc">Predat dom</div>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
