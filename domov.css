@@ -33,17 +33,56 @@ li a:hover {
 .active {
     background-color: wheat;
 }
+
 header {
     background-color: black;
     text-align: center;
 }
-h1,h2{
+
+h2 {
     height: 100px;
     text-align: center;
     background-color: red;
-    margin:  0px;
+    margin: 0;
 }
 
+div.gallery {
+    border: 3px solid gray;
+}
 
+div.gallery:hover {
+    border: 3px solid red;
+}
 
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
 
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .responsive {
+        width: 100%;
+    }
+}
